@@ -1,650 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>eLEARNING - eLearning HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>About Us | AllPro TechLabs - Software Training Institute in Kerala</title>
+  <meta name="description" content="Discover AllPro TechLabs, an ISO-certified IT academy in Kerala. We offer expert-led courses in MERN Stack, Python, Data Science, and UI/UX with placement assistance." />
+  <meta name="keywords" content="Software training institute in Kerala, MERN stack course Kottakkal, Python data science academy Malappuram, UI UX design course Kerala" />
+  <link rel="canonical" href="https://allprotechlabs.com/about.html" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Us | AllPro TechLabs - Software Training Institute in Kerala" />
+  <meta property="og:description" content="Empowering students and professionals with industry-ready software engineering skills, live projects, and dedicated placement drives." />
+  <meta property="og:url" content="https://allprotechlabs.com/about.html" />
+  <meta property="og:site_name" content="AllPro TechLabs" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+  <style>
+    /* ── RESET & BASE SETUP ── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    body {
+      font-family: 'Sora', sans-serif;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    /* ── ABOUT SECTION STYLES ── */
+    .about-section {
+      padding: 80px 0;
+      background: #ffffff;
+      color: #374151;
+    }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    .about-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>
-    <!-- Spinner End -->
+    /* Graphic Aspect Layout */
+    .about-img-wrap {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: 0 10px 30px rgba(10, 15, 30, 0.08);
+    }
 
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
-    >
-      <!-- <div
-    href="index.html"
-    class="navbar-brand d-flex align-items-center px-4 px-lg-5 w-25"
-  >
-    <h2 class="m-0 text-primary">
-      <i class="fa fa-book me-3"></i>eLEARNING
-    </h2>
-  </div> -->
-      <div
-        class="company_logo_session px-sm-4 px-lg-5 py-sm-2 py-2 py-md-2 d-flex align-items-center"
-      >
-        <img src="/img/Techlabs (1).png" alt="" class="company_logo" />
-        <h2 class="text-primary mt-2 col-6 col-sm-12 col-sm-fs-6">
-          ALLPRO TECHLABS
-        </h2>
-      </div>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="courses.html" class="nav-item nav-link">Courses</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Pages</a
-            >
-            <div class="dropdown-menu fade-down m-0">
-              <a href="team.html" class="dropdown-item">Our Team</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+    .about-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Floating Trust Badge */
+    .about-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 14px 20px;
+      box-shadow: 0 10px 30px rgba(10, 15, 30, 0.12);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 2;
+    }
+
+    .badge-icon {
+      font-size: 28px;
+      color: #0052cc;
+    }
+
+    .badge-text strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 800;
+      color: #0a0f1e;
+      line-height: 1.2;
+    }
+
+    .badge-text span {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    /* Typography Details */
+    .about-tag {
+      display: inline-block;
+      background: rgba(0, 82, 204, 0.06);
+      color: #0052cc;
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .about-title {
+      font-size: clamp(26px, 4vw, 36px);
+      color: #0a0f1e;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .about-desc {
+      color: #64748b;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+
+    .about-desc.space-bottom {
+      margin-bottom: 24px;
+    }
+
+    /* Core Training Feature Points Grid */
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 12px;
+      margin: 28px 0 36px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .feature-item i {
+      color: #0052cc;
+      font-size: 16px;
+    }
+
+    /* WhatsApp Call To Action Trigger */
+    .about-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 100px;
+      background: #0052cc;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .about-cta-btn:hover {
+      background: #0041a3;
+      transform: translateY(-2px);
+    }
+
+    /* ── ADAPTIVE RESPONSIVE RULES ── */
+    @media (max-width: 991px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .about-section {
+        padding: 60px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .about-badge {
+        bottom: 16px;
+        left: 16px;
+        padding: 10px 16px;
+      }
+      .badge-text strong {
+        font-size: 16px;
+      }
+      .about-cta-btn {
+        width: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "AllPro TechLabs",
+  "url": "https://allprotechlabs.com",
+  "logo": "https://allprotechlabs.com/img/AllproTechlabs_logo.png",
+  "description": "Premium software training institute in Kerala specializing in MERN Stack, UI/UX Product Design, Python, and AI Development.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kottakkal",
+    "addressRegion": "Kerala",
+    "addressCountry": "IN"
+  },
+  "award": "ISO 9001:2015 Certified Academy"
+}
+</script>
+</head>
+<body>
+
+  <section class="about-section" id="about" aria-labelledby="about-heading">
+    <div class="about-container">
+      <div class="about-grid">
+        
+        <div class="about-img-wrap">
+          <img src="img/manager-instructing-her-creative-team_74855-10255.jpg" 
+               alt="Practical workspace training session at AllPro TechLabs in Kottakkal, Kerala" 
+               title="AllPro TechLabs Software Training Center"
+               loading="lazy" />
+          <div class="about-badge">
+            <div class="badge-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+            <div class="badge-text">
+              <strong>ISO Certified</strong>
+              <span>Training Institute</span>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
-          >Join Now<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-    <!-- whatsup-popup  -->
-    <div class="whatsapp-popup">
-      <button class="whatsapp-button" onclick="togglePopup()">
-        <i>📞</i>
-      </button>
-
-      <div class="popup-container" id="popupContainer">
-        <div class="popup-header">
-          <div>
-            <i class="bi bi-whatsapp ms-2 me-1 fs-5 mt-5"></i> WhatsApp Enquiry
+        
+        <div class="about-content">
+          <span class="about-tag">About Us</span>
+          <h1 class="about-title" id="about-heading">AllPro TechLabs – Best Software Training Institute in Kerala</h1>
+          
+          <p class="about-desc">AllPro TechLabs is a leading IT and software training institute in Kerala. We help students, graduates, and working professionals build industry-ready skills through expert-led training, hands-on learning, and real-world project experience.</p>
+          
+          <p class="about-desc space-bottom">Our career-focused courses include MERN Stack Development, React.js, Python Programming, Next.js, TypeScript, Data Science, Digital Marketing, and UI/UX Design. Each program is designed to equip learners with the competence and confidence to succeed in today's competitive technology job market.</p>
+          
+          <div class="about-features">
+            <div class="feature-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Expert Trainers</div>
+            <div class="feature-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Online Live Classes</div>
+            <div class="feature-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Recorded Sessions</div>
+            <div class="feature-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Live Projects</div>
+            <div class="feature-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Placement Assistance</div>
+            <div class="feature-item"><i class="fas fa-check-circle" aria-hidden="true"></i> ISO Certification</div>
           </div>
-          <span class="close-popup" onclick="togglePopup()">&times;</span>
-        </div>
-        <div class="popup-body" style="padding: 40px 0px">
-          <p>
-            <span class="fw-bold">Have questions?</span> Chat with us on
-            WhatsApp about our
-            <span class="fw-bold"> Most Demanded Software courses!</span>
-          </p>
-
-          <a
-            href="https://wa.me/9142154977"
-            class="btn btn-success"
-            target="_blank"
-          >
-            <i class="bi bi-whatsapp me-1"></i> <span>Chat on WhatsApp</span>
+          
+          <a href="https://wa.me/919142154977" class="about-cta-btn" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> Enquire Now
           </a>
         </div>
+
       </div>
     </div>
+  </section>
 
-    <script>
-      function togglePopup() {
-        const popup = document.getElementById("popupContainer");
-        popup.classList.toggle("active");
-      }
-      // Wait for the page to load
-      window.onload = function () {
-        // Show the popup and overlay after 2 seconds
-        setTimeout(function () {
-          document.querySelector(".popup").style.display = "block";
-          document.querySelector(".popup-overlay").style.display = "block";
-        }, 3000);
-
-        // Close button functionality
-        document
-          .getElementById("close-popup-btn")
-          .addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".popup-overlay").style.display = "none";
-          });
-
-        // Close popup if the overlay is clicked
-        document
-          .querySelector(".popup-overlay")
-          .addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            this.style.display = "none";
-          });
-      };
-    </script>
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h1 class="display-3 text-white animated slideInDown">About Us</h1>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item">
-                  <a class="text-white" href="#">Home</a>
-                </li>
-                <li class="breadcrumb-item">
-                  <a class="text-white" href="#">Pages</a>
-                </li>
-                <li
-                  class="breadcrumb-item text-white active"
-                  aria-current="page"
-                >
-                  About
-                </li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Header End -->
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                <h5 class="mb-3">Skill Development</h5>
-                <p>
-                  Our Software courses provide a structured way to learn new
-                  programming languages, frameworks, tools, and techniques.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                <h5 class="mb-3">Online Tutorials</h5>
-                <p>
-                  Improve software skills with our online tutorials, Record
-                  sessions , designed for beginners and professionals alike.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                <h5 class="mb-3">Task Monitoring</h5>
-                <p>
-                  Monitor your training tasks effectively. ie , Project tasks ,
-                  assignments, deadlines, and progress in real-time. "
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="service-item text-center pt-3">
-              <div class="p-4">
-                <img
-                  src="img/diploma.png"
-                  alt=""
-                  class="bg-primary mb-4"
-                  style="width: 60px; height: 50px"
-                />
-                <!-- <i class="fa fa-3x fa-book-open text-primary mb-4"></i> -->
-                <h5 class="mb-3">Earn Internship Certificate</h5>
-                <p>
-                  Our Most Demanded-courses provide expert instruction and
-                  certification after successfull completion.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div
-            class="col-lg-6 wow fadeInUp"
-            data-wow-delay="0.1s"
-            style="min-height: 400px"
-          >
-            <div class="position-relative h-100">
-              <img
-                class="img-fluid position-absolute h-100"
-                src="img/manager-instructing-her-creative-team_74855-10255.jpg"
-                alt=""
-                style="object-fit: cover; width: 100%"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-            <h6 class="section-title bg-white text-start text-primary pe-3">
-              About Us
-            </h6>
-            <h1 class="mb-1 fs-2">Welcome to ALLPRO TECHLABS</h1>
-            <p class="mb-4 text-primary fs-5">
-              SOFTWARE INTERNSHIPS AND COURSES
-            </p>
-            <p class="mb-4">
-              Welcome to ALLPRO TECHLABS, a premier software training firm
-              dedicated to empowering learners with industry-relevant skills.
-              Our expert-led courses in web development, programming, and
-              software tools are designed to help you excel in your career. Join
-              us to unlock your potential and achieve your professional goals."
-            </p>
-            <div class="row gy-2 gx-4 mb-4">
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
-                  Trainers
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Online Live
-                  Classes
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Record
-                  Sessions
-                </p>
-              </div>
-
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Live
-                  Projects
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>Placement
-                  Assistance
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right text-primary me-2"></i>ISO
-                  Certification
-                </p>
-              </div>
-            </div>
-            <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="section-title bg-white text-center text-primary px-3">
-            Instructors
-          </h6>
-          <h1 class="mb-5">Expert Instructors</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item bg-light">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/93493545-people-icon.webp"
-                  style="width: 100%; padding: 40px"
-                  alt=""
-                />
-              </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -23px"
-              >
-                <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center p-4">
-                <h4 class="mb-1">Adarsh C</h4>
-                <small class="fs-6 text-primary fw-bold"
-                  >Data Sciantist - AI</small
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item bg-light">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/93493545-people-icon.webp"
-                  style="width: 100%; padding: 40px"
-                  alt=""
-                />
-              </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -23px"
-              >
-                <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center p-4">
-                <h4 class="mb-1">Aswin .C.K</h4>
-                <small class="fs-6 text-primary fw-bold"
-                  >Python Django Developer
-                </small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item bg-light">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/93493545-people-icon.webp"
-                  style="width: 100%; padding: 40px"
-                  alt=""
-                />
-              </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -23px"
-              >
-                <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center p-4">
-                <h4 class="mb-1">Shaji Abraham</h4>
-                <small class="fs-6 text-primary fw-bold"
-                  >Digital Marketing</small
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item bg-light">
-              <div class="overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/93493545-people-icon.webp"
-                  style="width: 100%; padding: 40px"
-                  alt=""
-                />
-              </div>
-              <div
-                class="position-relative d-flex justify-content-center"
-                style="margin-top: -23px"
-              >
-                <div class="bg-light d-flex justify-content-center pt-2 px-1">
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-sm-square btn-primary mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center p-4">
-                <h4 class="mb-1">Asnaf .T</h4>
-                <small class="fs-6 text-primary fw-bold">UI/UX Design</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team End -->
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Quick Link</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Privacy Policy</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">FAQs & Help</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Contact</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>Near Arya Vaidya Sala ,
-              Kottakkal
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+91 7560929242 , +91
-              9142154977
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>allprotechlabs@gmail.com
-            </p>
-            <div class="d-flex pt-2">
-              <a
-                class="btn btn-outline-light btn-social"
-                href="https://www.facebook.com/AllProTechLabs"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-outline-light btn-social"
-                href="https://www.instagram.com/allprotechlabs/"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                class="btn btn-outline-light btn-social"
-                href="https://in.linkedin.com/company/allprotechlabs"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-white mb-3">Gallery</h4>
-            <div class="row g-2 pt-2">
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  style="height: 70px; width: 100%"
-                  src="img/istockphoto-1266953354-612x612.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  style="height: 70px; width: 100%"
-                  src="img/1_RDN058L5gQ02Xy13OaxjnQ.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  class="img-fluid bg-light p-1"
-                  style="height: 70px; width: 100%"
-                  src="img/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_zx5g6fxr3kdrfpwxpvec.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  style="height: 70px; width: 100%"
-                  class="img-fluid bg-light p-1"
-                  src="img/course-2.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  style="height: 70px; width: 100%"
-                  class="img-fluid bg-light p-1"
-                  src="img/course-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-4">
-                <img
-                  style="height: 70px; width: 100%"
-                  class="img-fluid bg-light p-1"
-                  src="img/course-1.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 col-md-6">
-       <h4 class="text-white mb-3">Newsletter</h4>
-       <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-       <div class="position-relative mx-auto" style="max-width: 400px">
-         <input
-           class="form-control border-0 w-100 py-3 ps-4 pe-5"
-           type="text"
-           placeholder="Your email"
-         />
-         <button
-           type="button"
-           class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-         >
-           SignUp
-         </button>
-       </div>
-     </div> -->
-        </div>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <a class="border-bottom" href="#"></a> All Right Reserved.
-              Designed By
-              <a class="border-bottom" href="https://htmlcodex.com"
-                >AllPro Techlabs</a
-              >
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <div class="footer-menu">
-                <a href="">Home</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FQAs</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+</body>
 </html>

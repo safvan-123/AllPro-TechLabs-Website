@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AllPro TechLabs – Best Software Training Institute in Kottakkal, Kerala | Python, MERN, Next.js & More</title>
+  <title>AllPro TechLabs – Best Software Training Institute in Kottakkal, Kerala | React.js, MERN, Next.js ,Python & More</title>
   <meta name="description"
-    content="AllPro TechLabs is a leading IT and software training institute in Kottakkal, Kerala offering MERN Stack,React.js ,Python, Next.js, Data Science, Digital Marketing, UI/UX Design, live projects, internships, and placement assistance." />
+    content="AllPro TechLabs is the best IT and software training institute in Kottakkal,Malappuram , Kerala offering MERN Stack,React.js ,Python, Next.js, Data Science, Digital Marketing, UI/UX Design, live projects, internships, and placement assistance." />
   <meta name="keywords"
-    content="AllPro TechLabs, software training Kottakkal, Python course Kerala, MERN Stack training,React.js , Next.js course, TypeScript training, Digital Marketing Kerala, UI UX Design course, Data Science training, internship Kottakkal" />
+    content="AllPro TechLabs, best software training in Kottakkal, Python course Kerala, MERN Stack training,React.js , Next.js course, TypeScript training, Digital Marketing Kerala, UI UX Design course, Data Science training, internship Kottakkal,Malappuram" />
   <meta name="author" content="AllPro TechLabs" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.allprotechlabs.com/" />
@@ -16,9 +16,9 @@
   <!-- Open Graph / Social SEO -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.allprotechlabs.com/" />
-  <meta property="og:title" content="AllPro TechLabs – Software Training Institute in Kottakkal, Kerala" />
+  <meta property="og:title" content="AllPro TechLabs –Best Software Training Institute in Kottakkal,Malappuram , Kerala" />
   <meta property="og:description"
-    content="Join AllPro TechLabs for industry-ready software courses: Python, MERN Stack,React.js , Next.js, TypeScript, Digital Marketing, UI/UX, and Data Science. Located in Kottakkal, Kerala." />
+    content="Join AllPro TechLabs for industry-ready software courses: Python, MERN Stack,React.js , Next.js, TypeScript, Digital Marketing, UI/UX, and Data Science. Located in Malappuram , Kerala." />
   <meta property="og:image" content="img/Techlabs (1).png" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -212,211 +212,226 @@
     }
 
     /* ── NAVBAR ── */
-/* ── NAVBAR LAYOUT CONFIGURATION ── */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: var(--white);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-  padding: 0 24px;
-}
+    /* ── NAVBAR LAYOUT CONFIGURATION ── */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      padding: 0 24px;
+    }
 
-.navbar-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 76px; 
-}
+    .navbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
 
-/* ── BRANDING LOGO SETUP (CLEAN & SCALE-SAFE) ── */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
+    /* ── BRANDING LOGO SETUP (CLEAN & SCALE-SAFE) ── */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
 
-/* Direct image control prevents stretching and retains HD crispness */
-.brand-logo-img {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%; /* Keeps the image canvas perfectly round */
-  object-fit: cover; /* Ensures the high-def graphic spans the space elegantly */
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+    /* Direct image control prevents stretching and retains HD crispness */
+    .brand-logo-img {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      /* Keeps the image canvas perfectly round */
+      object-fit: cover;
+      /* Ensures the high-def graphic spans the space elegantly */
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.brand:hover .brand-logo-img {
-  transform: scale(1.06); /* Adds a subtle micro-interaction bounce on hover */
-}
+    .brand:hover .brand-logo-img {
+      transform: scale(1.06);
+      /* Adds a subtle micro-interaction bounce on hover */
+    }
 
-.brand-title-group {
-  display: flex;
-  flex-direction: column;
-}
+    .brand-title-group {
+      display: flex;
+      flex-direction: column;
+    }
 
-.brand-text { 
-  font-family: 'Sora', sans-serif; 
-  font-size: 19px; 
-  font-weight: 800; 
-  color: var(--primary); 
-  line-height: 1.1; 
-}
+    .brand-text {
+      font-family: 'Sora', sans-serif;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+    }
 
-.brand-sub { 
-  font-size: 9px; 
-  font-weight: 600; 
-  color: var(--text-light); 
-  letter-spacing: 1.5px; 
-  text-transform: uppercase; 
-  margin-top: 2px;
-}
+    .brand-sub {
+      font-size: 9px;
+      font-weight: 600;
+      color: var(--text-light);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
 
-/* ── DESKTOP NAVIGATION LINKS ── */
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  list-style: none;
-}
+    /* ── DESKTOP NAVIGATION LINKS ── */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
 
-.nav-links a {
-  padding: 10px 18px;
-  border-radius: 100px;
-  font-family: 'Sora', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
-  text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+    .nav-links a {
+      padding: 10px 18px;
+      border-radius: 100px;
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.nav-links a:hover, 
-.nav-links a.active { 
-  color: var(--primary); 
-  background: var(--primary-light); 
-}
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+      background: var(--primary-light);
+    }
 
-.nav-cta { 
-  margin-left: 16px; 
-  padding: 11px 24px; 
-  font-size: 14px; 
-  font-weight: 600;
-  border-radius: 100px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+    .nav-cta {
+      margin-left: 16px;
+      padding: 11px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 100px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-/* ── MOBILE HAMBURGER BUTTON STRUCTURE ── */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  padding: 4px;
-  background: none;
-  border: none;
-  outline: none;
-}
+    /* ── MOBILE HAMBURGER BUTTON STRUCTURE ── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+      outline: none;
+    }
 
-.hamburger span { 
-  width: 24px; 
-  height: 2.5px; 
-  background: var(--dark); 
-  border-radius: 4px; 
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
-  display: block; 
-}
+    .hamburger span {
+      width: 24px;
+      height: 2.5px;
+      background: var(--dark);
+      border-radius: 4px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: block;
+    }
 
-.hamburger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.hamburger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(8.5px) rotate(45deg);
+    }
 
-/* ── MODERN MOBILE DRAWER OVERLAY ── */
-.mobile-nav {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background: var(--white);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border-top: 1px solid rgba(0,0,0,0.04);
-}
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
 
-.mobile-nav.open { 
-  max-height: 480px;
-}
-.mobile-links-container {
-  padding: 16px 24px 32px;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-}
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-8.5px) rotate(-45deg);
+    }
 
-.mobile-nav.open .mobile-links-container {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.15s;
-}
+    /* ── MODERN MOBILE DRAWER OVERLAY ── */
+    .mobile-nav {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: var(--white);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border-top: 1px solid rgba(0, 0, 0, 0.04);
+    }
 
-.mobile-link { 
-  display: block; 
-  padding: 14px 8px; 
-  font-family: 'Sora', sans-serif; 
-  font-weight: 600; 
-  font-size: 15px; 
-  color: var(--text); 
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04); 
-  transition: color 0.2s ease, padding-left 0.2s ease;
-}
+    .mobile-nav.open {
+      max-height: 480px;
+    }
 
-.mobile-link:last-of-type { 
-  border-bottom: none; 
-}
+    .mobile-links-container {
+      padding: 16px 24px 32px;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+    }
 
-.mobile-link:hover,
-.mobile-link:active {
-  color: var(--primary);
-  padding-left: 14px;
-}
+    .mobile-nav.open .mobile-links-container {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.15s;
+    }
 
-.mobile-cta { 
-  margin-top: 20px; 
-  width: 100%; 
-  justify-content: center; 
-  border-radius: 100px; 
-  padding: 14px;
-  font-size: 15px;
-  font-weight: 600;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-}
+    .mobile-link {
+      display: block;
+      padding: 14px 8px;
+      font-family: 'Sora', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+      transition: color 0.2s ease, padding-left 0.2s ease;
+    }
 
-/* ── RESPONSIVE MEDIA BREAKPOINT ── */
-@media (max-width: 991px) {
-  .nav-links, 
-  .navbar-inner > .nav-cta { 
-    display: none; 
-  }
-  .hamburger { 
-    display: flex; 
-  }
-}
+    .mobile-link:last-of-type {
+      border-bottom: none;
+    }
+
+    .mobile-link:hover,
+    .mobile-link:active {
+      color: var(--primary);
+      padding-left: 14px;
+    }
+
+    .mobile-cta {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+      border-radius: 100px;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 600;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+
+    /* ── RESPONSIVE MEDIA BREAKPOINT ── */
+    @media (max-width: 991px) {
+
+      .nav-links,
+      .navbar-inner>.nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
 
     /* ── HERO CAROUSEL ── */
     .hero {
@@ -833,34 +848,34 @@
       color: var(--primary);
     }
 
-     
-.course-card-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-}
- 
-.course-cta {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: gap 0.2s;
-}
- 
-.course-card:hover .course-cta {
-  gap: 10px;
-}
- 
-.course-cta i {
-  font-size: 12px;
-}
+
+    .course-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      height: 100%;
+    }
+
+    .course-cta {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+
+    .course-card:hover .course-cta {
+      gap: 10px;
+    }
+
+    .course-cta i {
+      font-size: 12px;
+    }
 
     /* ── CATEGORIES ── */
     .cat-grid {
@@ -1729,56 +1744,56 @@
 <body>
 
   <!-- ── NAVBAR ── -->
- <nav class="navbar" role="navigation" aria-label="Main Navigation">
-  <div class="navbar-inner">
-    
-    <!-- Optimized Brand Group with High-Definition Circular Logo Asset -->
-    <a href="/index.html" class="brand" aria-label="AllPro TechLabs Home">
-      <img src="img/AllproTechlabs_logo.png" alt="AllPro TechLabs Logo" class="brand-logo-img"> 
-      <div class="brand-title-group"> 
-        <div class="brand-text">AllPro TechLabs</div> 
-        <div class="brand-sub">ISO Certified Academy</div>
-      </div>
-    </a>
-    
-    <!-- Desktop Navigation Links -->
-    <ul class="nav-links" role="list">
-      <li><a href="/#home" class="active">Home</a></li>
-      <li><a href="/#about">About</a></li>
-      <li><a href="/#courses">Courses</a></li>
-      <li><a href="/#instructors">Instructors</a></li>
-      <li><a href="/#contact">Contact</a></li>
-      <li><a href="/blog/index.html">Blog</a></li>
-    </ul>
-    
-    <!-- Action Callout (CTA) -->
-    <a href="https://wa.me/919142154977" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
-      <i class="fas fa-paper-plane" aria-hidden="true"></i> Enroll Now
-    </a>
-    
-    <!-- Animated Mobile Hamburger Button -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  
-  <!-- Smooth Slide Down Mobile Navigation Overlay -->
-  <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
-    <div class="mobile-links-container">
-      <a href="/#home" class="mobile-link">Home</a>
-      <a href="/#about" class="mobile-link">About</a>
-      <a href="/#courses" class="mobile-link">Courses</a>
-      <a href="/#instructors" class="mobile-link">Instructors</a>
-      <a href="/#contact" class="mobile-link">Contact</a>
-      <!-- Added Blog directly inside mobile viewport layout container -->
-      <a href="/blog/index.html" class="mobile-link">Blog</a>
-      
-      <a href="https://wa.me/919142154977" class="btn btn-primary mobile-cta" target="_blank" rel="noopener">
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="navbar-inner">
+
+      <!-- Optimized Brand Group with High-Definition Circular Logo Asset -->
+      <a href="/index.html" class="brand" aria-label="AllPro TechLabs Home">
+        <img src="img/AllproTechlabs_logo.png" alt="AllPro TechLabs Logo" class="brand-logo-img">
+        <div class="brand-title-group">
+          <div class="brand-text">AllPro TechLabs</div>
+          <div class="brand-sub">ISO Certified Academy</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="/#home" class="active">Home</a></li>
+         <li><a href="/about.html">About</a></li>
+        <li><a href="/#courses">Courses</a></li>
+        <li><a href="/#instructors">Instructors</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/blog/index.html">Blog</a></li>
+      </ul>
+
+      <!-- Action Callout (CTA) -->
+      <a href="https://wa.me/919142154977" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
         <i class="fas fa-paper-plane" aria-hidden="true"></i> Enroll Now
       </a>
+
+      <!-- Animated Mobile Hamburger Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div>
-</nav>
+
+    <!-- Smooth Slide Down Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
+      <div class="mobile-links-container">
+        <a href="/#home" class="mobile-link">Home</a>
+        <a href="/#about" class="mobile-link">About</a>
+        <a href="/#courses" class="mobile-link">Courses</a>
+        <a href="/#instructors" class="mobile-link">Instructors</a>
+        <a href="/#contact" class="mobile-link">Contact</a>
+        <!-- Added Blog directly inside mobile viewport layout container -->
+        <a href="/blog/index.html" class="mobile-link">Blog</a>
+
+        <a href="https://wa.me/919142154977" class="btn btn-primary mobile-cta" target="_blank" rel="noopener">
+          <i class="fas fa-paper-plane" aria-hidden="true"></i> Enroll Now
+        </a>
+      </div>
+    </div>
+  </nav>
 
   <!-- ── HERO CAROUSEL ── -->
   <section class="hero" id="home" aria-label="Hero Carousel">
@@ -1792,8 +1807,10 @@
             <div class="slide-content">
               <span class="slide-tag">Welcome to AllPro TechLabs</span>
               <h1>Best IT & Software Training Institute in Kerala</h1>
-              <p>Gain industry-ready skills in MERN Stack,React.js, Python , Next.js, Digital Marketing, UI/UX & Data Science
-                through live online classes and real projects.</p>
+              <p>
+                AllPro TechLabs is a leading IT and software training institute in Kerala providing professional
+                training, live projects, internships, and placement assistance.
+              </p>
               <div class="slide-btns">
                 <a href="#courses" class="btn btn-primary"><i class="fas fa-graduation-cap"></i> Explore Courses</a>
                 <a href="https://wa.me/919142154977" class="btn btn-outline" target="_blank" rel="noopener"><i
@@ -1810,9 +1827,8 @@
           <div class="container">
             <div class="slide-content">
               <span class="slide-tag">100% Online Learning</span>
-              <h1>Learn From Home – Get Internship Certificate</h1>
-              <p>Join Kerala's leading online software training institute and master our Courses through live classes,
-                recorded sessions, internship opportunities, and placement assistance.</p>
+              <h1>Learn From Home & Earn an Internship Certificate</h1>
+              <p>Join AllPro TechLabs, a leading software training institute in Kerala, and master in-demand skills through live online classes, recorded sessions, real-world projects, internship opportunities, and placement assistance.</p>
               <div class="slide-btns">
                 <a href="#about" class="btn btn-primary"><i class="fas fa-info-circle"></i> About Us</a>
                 <a href="#courses" class="btn btn-outline"><i class="fas fa-book-open"></i> Our Courses</a>
@@ -1865,7 +1881,8 @@
         <div class="service-card fade-up">
           <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
           <h3>Skill Development</h3>
-          <p>Gain practical expertise through structured training programs in Python,React.js, MERN Stack, Next.js, TypeScript,
+          <p>Gain practical expertise through structured training programs in Python,React.js, MERN Stack, Next.js,
+            TypeScript,
             Data Science, Digital Marketing, UI/UX Design, and other industry-demanded technologies.</p>
         </div>
         <div class="service-card fade-up">
@@ -1907,13 +1924,14 @@
         </div>
         <div class="fade-up">
           <span class="section-tag">About Us</span>
-          <h2 class="section-title" id="about-heading">AllPro TechLabs – Leading IT & Software Training Institute in
+          <h2 class="section-title" id="about-heading">AllPro TechLabs – Best Software Training Institute in
             Kerala</h2>
-          <p style="color:var(--text-light);line-height:1.8;margin-bottom:16px;">AllPro TechLabs is a leading IT and
+          <p style="color:var(--text-light);line-height:1.8;margin-bottom:16px;">AllPro TechLabs is the best IT and
             software training institute in Kerala. We help students, graduates, and working professionals build
             industry-ready skills through expert-led training, hands-on learning, and real-world project experience.</p>
           <p style="color:var(--text-light);line-height:1.8;margin-bottom:24px;">Our career-focused courses include MERN
-            Stack Development,React.js ,Python Programming, Next.js, TypeScript, Data Science, Digital Marketing, and UI/UX
+            Stack Development,React.js ,Python Programming, Next.js, TypeScript, Data Science, Digital Marketing, and
+            UI/UX
             Design. Each program is designed to equip learners with confidence to succeed in today's competitive
             technology job market.</p>
           <div class="about-features">
@@ -1932,172 +1950,192 @@
   </section>
 
   <!-- ── COURSES ── -->
- 
-<section class="section courses" id="courses" aria-labelledby="courses-heading">
-  <div class="container">
-    <div class="text-center">
-      <span class="section-tag">Our Programs</span>
-      <h2 class="section-title" id="courses-heading">Most Demanded Software Courses</h2>
-      <p class="section-subtitle">Explore our job-oriented software courses. Gain industry-ready skills and prepare
-        for high-growth careers in the tech sector.</p>
-    </div>
- 
-    <div class="courses-grid">
-<article class="course-card fade-up">
-  <a href="/coursedetails/reactjstraining.html" class="course-card-link" aria-label="View React JS Frontend Development Training in Kerala details">
-    <div class="course-thumb">
-      <img src="img/1_RDN058L5gQ02Xy13OaxjnQ.jpg" alt="React JS Frontend Development course Kottakkal" loading="lazy" />
-      <span class="course-badge">Trending</span>
-    </div>
-    <div class="course-body">
-      <h3>React.js Frontend Web Development</h3>
-      <p>Learn to build fast, responsive user interfaces. Master hooks, state handling, reusable UI components, and integrate live APIs smoothly.</p>
-      <div class="course-meta">
-        <span><i class="fas fa-clock"></i> 4 Months</span>
-        <span><i class="fas fa-laptop"></i> Online Live</span>
-        <span><i class="fas fa-certificate"></i> Certificate</span>
+
+  <section class="section courses" id="courses" aria-labelledby="courses-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Our Programs</span>
+        <h2 class="section-title" id="courses-heading">Most Demanded Software Courses</h2>
+        <p class="section-subtitle">Explore our job-oriented software courses. Gain industry-ready skills and prepare
+          for high-growth careers in the tech sector.</p>
       </div>
-      <div class="course-cta">
-        View Details <i class="fas fa-arrow-right"></i>
-      </div>
-    </div>
-  </a>
-</article>
- 
-      <!-- MERN Stack -->
-      <article class="course-card fade-up">
-        <a href="/coursedetails/mernstacktraining.html" class="course-card-link" aria-label="View MERN Stack Training in Kerala details">
-          <div class="course-thumb">
-            <img src="https://wallpaperaccess.com/full/9445597.jpg" alt="MERN Stack full stack development course Kerala" loading="lazy" />
-            <span class="course-badge">In Demand</span>
-          </div>
-          <div class="course-body">
-            <h3>MERN Stack Development</h3>
-            <p>Full-stack web development with MongoDB, Express.js, React.js, and Node.js. Build complete web applications end-to-end.</p>
-            <div class="course-meta">
-              <span><i class="fas fa-clock"></i> 6 Months</span>
-              <span><i class="fas fa-laptop"></i> Online Live</span>
-              <span><i class="fas fa-certificate"></i> Certificate</span>
+
+      <div class="courses-grid">
+        <article class="course-card fade-up">
+          <a href="/coursedetails/reactjstraining.html" class="course-card-link"
+            aria-label="View React JS Frontend Development Training in Kerala details">
+            <div class="course-thumb">
+              <img src="img/1_RDN058L5gQ02Xy13OaxjnQ.jpg" alt="React JS Frontend Development course Kottakkal"
+                loading="lazy" />
+              <span class="course-badge">Trending</span>
             </div>
-            <div class="course-cta">
-              View Details <i class="fas fa-arrow-right"></i>
+            <div class="course-body">
+              <h3>React.js Frontend Web Development</h3>
+              <p>Learn to build fast, responsive user interfaces. Master hooks, state handling, reusable UI components,
+                and integrate live APIs smoothly.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 4 Months</span>
+                <span><i class="fas fa-laptop"></i> Online Live</span>
+                <span><i class="fas fa-certificate"></i> Certificate</span>
+              </div>
+              <div class="course-cta">
+                View Details <i class="fas fa-arrow-right"></i>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
- 
+          </a>
+        </article>
+
+        <!-- MERN Stack -->
+        <article class="course-card fade-up">
+          <a href="/coursedetails/mernstacktraining.html" class="course-card-link"
+            aria-label="View MERN Stack Training in Kerala details">
+            <div class="course-thumb">
+              <img src="https://wallpaperaccess.com/full/9445597.jpg"
+                alt="MERN Stack full stack development course Kerala" loading="lazy" />
+              <span class="course-badge">In Demand</span>
+            </div>
+            <div class="course-body">
+              <h3>MERN Stack Development</h3>
+              <p>Full-stack web development with MongoDB, Express.js, React.js, and Node.js. Build complete web
+                applications end-to-end.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 6 Months</span>
+                <span><i class="fas fa-laptop"></i> Online Live</span>
+                <span><i class="fas fa-certificate"></i> Certificate</span>
+              </div>
+              <div class="course-cta">
+                View Details <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </article>
+
         <!-- Python -->
-      <article class="course-card fade-up">
-        <a href="/coursedetails/pythontraining.html" class="course-card-link" aria-label="View Python Training in Kerala details">
-          <div class="course-thumb">
-            <img src="img/istockphoto-1266953354-612x612.jpg" alt="Python programming course Kottakkal Kerala" loading="lazy" />
-            <span class="course-badge">Popular</span>
-          </div>
-          <div class="course-body">
-            <h3>Python Programming</h3>
-            <p>From basics to advanced Python — scripting, OOP, automation, APIs, and integration with data science libraries.</p>
-            <div class="course-meta">
-              <span><i class="fas fa-clock"></i> 4 Months</span>
-              <span><i class="fas fa-laptop"></i> Online Live</span>
-              <span><i class="fas fa-certificate"></i> Certificate</span>
+        <article class="course-card fade-up">
+          <a href="/coursedetails/pythontraining.html" class="course-card-link"
+            aria-label="View Python Training in Kerala details">
+            <div class="course-thumb">
+              <img src="img/istockphoto-1266953354-612x612.jpg" alt="Python programming course Kottakkal Kerala"
+                loading="lazy" />
+              <span class="course-badge">Popular</span>
             </div>
-            <div class="course-cta">
-              View Details <i class="fas fa-arrow-right"></i>
+            <div class="course-body">
+              <h3>Python Programming</h3>
+              <p>From basics to advanced Python — scripting, OOP, automation, APIs, and integration with data science
+                libraries.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 4 Months</span>
+                <span><i class="fas fa-laptop"></i> Online Live</span>
+                <span><i class="fas fa-certificate"></i> Certificate</span>
+              </div>
+              <div class="course-cta">
+                View Details <i class="fas fa-arrow-right"></i>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
-      <!-- Next.js & TypeScript -->
-      <article class="course-card fade-up">
-        <a href="/coursedetails/nextjstraining.html" class="course-card-link" aria-label="View Next.js TypeScript Training in Kerala details">
-          <div class="course-thumb">
-            <img src="img/cat-3.jpg" alt="Next.js TypeScript course Kottakkal" loading="lazy" />
-            <span class="course-badge">New</span>
-          </div>
-          <div class="course-body">
-            <h3>Next.js & TypeScript</h3>
-            <p>Modern React framework with server-side rendering, static generation, and TypeScript for type-safe enterprise applications.</p>
-            <div class="course-meta">
-              <span><i class="fas fa-clock"></i> 3 Months</span>
-              <span><i class="fas fa-laptop"></i> Online Live</span>
-              <span><i class="fas fa-certificate"></i> Certificate</span>
+          </a>
+        </article>
+        <!-- Next.js & TypeScript -->
+        <article class="course-card fade-up">
+          <a href="/coursedetails/nextjstraining.html" class="course-card-link"
+            aria-label="View Next.js TypeScript Training in Kerala details">
+            <div class="course-thumb">
+              <img src="img/cat-3.jpg" alt="Next.js TypeScript course Kottakkal" loading="lazy" />
+              <span class="course-badge">New</span>
             </div>
-            <div class="course-cta">
-              View Details <i class="fas fa-arrow-right"></i>
+            <div class="course-body">
+              <h3>Next.js & TypeScript</h3>
+              <p>Modern React framework with server-side rendering, static generation, and TypeScript for type-safe
+                enterprise applications.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 3 Months</span>
+                <span><i class="fas fa-laptop"></i> Online Live</span>
+                <span><i class="fas fa-certificate"></i> Certificate</span>
+              </div>
+              <div class="course-cta">
+                View Details <i class="fas fa-arrow-right"></i>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
- 
-      <!-- Digital Marketing -->
-      <article class="course-card fade-up">
-        <a href="/coursedetails//digitalmarketingtraining.html" class="course-card-link" aria-label="View Digital Marketing Course in Kerala details">
-          <div class="course-thumb">
-            <img src="img/cat-4.jpg" alt="Digital Marketing course Kerala" loading="lazy" />
-            <span class="course-badge">High ROI</span>
-          </div>
-          <div class="course-body">
-            <h3>Digital Marketing</h3>
-            <p>SEO, SEM, social media marketing, Google Ads, content strategy, analytics, and email marketing — all in one program.</p>
-            <div class="course-meta">
-              <span><i class="fas fa-clock"></i> 3 Months</span>
-              <span><i class="fas fa-laptop"></i> Online Live</span>
-              <span><i class="fas fa-certificate"></i> Certificate</span>
+          </a>
+        </article>
+
+        <!-- Digital Marketing -->
+        <article class="course-card fade-up">
+          <a href="/coursedetails//digitalmarketingtraining.html" class="course-card-link"
+            aria-label="View Digital Marketing Course in Kerala details">
+            <div class="course-thumb">
+              <img src="img/cat-4.jpg" alt="Digital Marketing course Kerala" loading="lazy" />
+              <span class="course-badge">High ROI</span>
             </div>
-            <div class="course-cta">
-              View Details <i class="fas fa-arrow-right"></i>
+            <div class="course-body">
+              <h3>Digital Marketing</h3>
+              <p>SEO, SEM, social media marketing, Google Ads, content strategy, analytics, and email marketing — all in
+                one program.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 3 Months</span>
+                <span><i class="fas fa-laptop"></i> Online Live</span>
+                <span><i class="fas fa-certificate"></i> Certificate</span>
+              </div>
+              <div class="course-cta">
+                View Details <i class="fas fa-arrow-right"></i>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
- 
-      <!-- UI/UX Design -->
-      <article class="course-card fade-up">
-        <a href="/coursedetails/uiuxtraining.html" class="course-card-link" aria-label="View UI UX Design Course in Kerala details">
-          <div class="course-thumb">
-            <img src="img/istockphoto-1266953354-612x612.jpg" alt="UI UX Design course Kottakkal" loading="lazy" style="filter:hue-rotate(180deg)" />
-            <span class="course-badge">Creative</span>
-          </div>
-          <div class="course-body">
-            <h3>UI/UX Design</h3>
-            <p>Figma, wireframing, prototyping, user research, design systems, and portfolio-ready projects for design career success.</p>
-            <div class="course-meta">
-              <span><i class="fas fa-clock"></i> 4 Months</span>
-              <span><i class="fas fa-laptop"></i> Online Live</span>
-              <span><i class="fas fa-certificate"></i> Certificate</span>
+          </a>
+        </article>
+
+        <!-- UI/UX Design -->
+        <article class="course-card fade-up">
+          <a href="/coursedetails/uiuxtraining.html" class="course-card-link"
+            aria-label="View UI UX Design Course in Kerala details">
+            <div class="course-thumb">
+              <img src="img/istockphoto-1266953354-612x612.jpg" alt="UI UX Design course Kottakkal" loading="lazy"
+                style="filter:hue-rotate(180deg)" />
+              <span class="course-badge">Creative</span>
             </div>
-            <div class="course-cta">
-              View Details <i class="fas fa-arrow-right"></i>
+            <div class="course-body">
+              <h3>UI/UX Design</h3>
+              <p>Figma, wireframing, prototyping, user research, design systems, and portfolio-ready projects for design
+                career success.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 4 Months</span>
+                <span><i class="fas fa-laptop"></i> Online Live</span>
+                <span><i class="fas fa-certificate"></i> Certificate</span>
+              </div>
+              <div class="course-cta">
+                View Details <i class="fas fa-arrow-right"></i>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
- 
-      <!-- Data Science -->
-      <article class="course-card fade-up">
-        <a href="/coursedetails/datasciancetraining.html" class="course-card-link" aria-label="View Data Science Course in Kerala details">
-          <div class="course-thumb">
-            <img src="https://ik.imagekit.io/edtechdigit/usdsi/content/images/articles/ai-and-data-science-best-combo-for-rewarding-career-in-2024-01.jpg" alt="Data Science AI Machine Learning course Kerala" loading="lazy" style="filter:saturate(1.3)" />
-            <span class="course-badge">Future-Ready</span>
-          </div>
-          <div class="course-body">
-            <h3>Data Science & AI / ML</h3>
-            <p>Machine learning, deep learning, data visualization, Python libraries (Pandas, NumPy, Scikit-learn), and model deployment.</p>
-            <div class="course-meta">
-              <span><i class="fas fa-clock"></i> 4 Months</span>
-              <span><i class="fas fa-laptop"></i> Online Live</span>
-              <span><i class="fas fa-certificate"></i> Certificate</span>
+          </a>
+        </article>
+
+        <!-- Data Science -->
+        <article class="course-card fade-up">
+          <a href="/coursedetails/datasciancetraining.html" class="course-card-link"
+            aria-label="View Data Science Course in Kerala details">
+            <div class="course-thumb">
+              <img
+                src="https://ik.imagekit.io/edtechdigit/usdsi/content/images/articles/ai-and-data-science-best-combo-for-rewarding-career-in-2024-01.jpg"
+                alt="Data Science AI Machine Learning course Kerala" loading="lazy" style="filter:saturate(1.3)" />
+              <span class="course-badge">Future-Ready</span>
             </div>
-            <div class="course-cta">
-              View Details <i class="fas fa-arrow-right"></i>
+            <div class="course-body">
+              <h3>Data Science & AI / ML</h3>
+              <p>Machine learning, deep learning, data visualization, Python libraries (Pandas, NumPy, Scikit-learn),
+                and model deployment.</p>
+              <div class="course-meta">
+                <span><i class="fas fa-clock"></i> 4 Months</span>
+                <span><i class="fas fa-laptop"></i> Online Live</span>
+                <span><i class="fas fa-certificate"></i> Certificate</span>
+              </div>
+              <div class="course-cta">
+                View Details <i class="fas fa-arrow-right"></i>
+              </div>
             </div>
-          </div>
-        </a>
-      </article>
- 
+          </a>
+        </article>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- ── WHY US ── -->
   <!-- ── WHY US SECTION (SEO OPTIMIZED) ── -->
@@ -2365,7 +2403,8 @@
             <div class="footer-logo-text">AllPro TechLabs</div>
           </div>
           <p class="footer-desc">AllPro TechLabs is the best software training institute in Kerala. We
-            provide job-oriented IT courses including MERN Stack,React.js , Next.js, TypeScript, Python, Digital Marketing, UI/UX
+            provide job-oriented IT courses including MERN Stack,React.js , Next.js, TypeScript, Python, Digital
+            Marketing, UI/UX
             Designing, and Data Science with practical internship training.</p>
           <div class="social-links">
             <a href="https://www.facebook.com/AllProTechLabs" target="_blank" rel="noopener" aria-label="Facebook"><i
@@ -2465,31 +2504,31 @@
   </button>
 
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("hamburger");
-  const mobileNav = document.getElementById("mobileNav");
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const mobileNav = document.getElementById("mobileNav");
 
-  // Toggle open states
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    mobileNav.classList.toggle("open");
+      // Toggle open states
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        mobileNav.classList.toggle("open");
 
-    const expanded = hamburger.classList.contains("open");
-    hamburger.setAttribute("aria-expanded", expanded);
-  });
+        const expanded = hamburger.classList.contains("open");
+        hamburger.setAttribute("aria-expanded", expanded);
+      });
 
-  // Close mobile menu smoothly when clicking section jumps
-  mobileNav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      // Only auto-close immediately if it's an on-page hash link
-      if (link.getAttribute("href").includes("#")) {
-        hamburger.classList.remove("open");
-        mobileNav.classList.remove("open");
-        hamburger.setAttribute("aria-expanded", "false");
-      }
+      // Close mobile menu smoothly when clicking section jumps
+      mobileNav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          // Only auto-close immediately if it's an on-page hash link
+          if (link.getAttribute("href").includes("#")) {
+            hamburger.classList.remove("open");
+            mobileNav.classList.remove("open");
+            hamburger.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
     });
-  });
-});
 
     // ── HERO CAROUSEL ──
     const wrapper = document.getElementById('carouselWrapper');
