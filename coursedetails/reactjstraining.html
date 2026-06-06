@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>React.js Course in Kerala | Front End Web Development Training Kottakkal</title>
+  <meta name="description" content="Best React.js Course in Kerala. Master React Hooks, Context API, Redux Toolkit, React Router, and REST APIs in Kottakkal with placement support."/>
+  <meta name="keywords" content="React js course Kerala, frontend developer training Kottakkal, React routing coaching Malappuram, JavaScript training Kerala, learn web development Kochi, software engineering institute Calicut, frontend framework bootcamp"/>
+  <link class="canonical" href="https://yoursite.com/reactjs-course-kerala.html"/>
+  <meta property="og:title" content="Professional React.js Front End Web Development Course in Kerala | Kottakkal"/>
+  <meta property="og:description" content="Master production-ready React.js, modern JavaScript (ES6+), state management, dynamic user interfaces, and cloud hosting deployment in Kerala."/>
+  <meta property="og:type" content="website"/>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "React.js Front End Web Engineering Masterclass",
+    "description": "Comprehensive modern frontend web development program in Kerala covering JavaScript ES6+, React Components, Hooks, State Management, API Integration, and web optimization.",
+    "provider": { 
+      "@type": "Organization", 
+      "name": "Your Institute Name", 
+      "sameAs": "https://yoursite.com" 
+    },
+    "hasCourseInstance": { 
+      "@type": "CourseInstance", 
+      "courseMode": "Hybrid/Online", 
+      "duration": "4 Months" 
+    },
+    "teaches": "JavaScript ES6+, React Virtual DOM, Functional Components, JSX, React Hooks (useState, useEffect), Context API, Redux Toolkit, REST API Integration, Tailwind CSS, Netlify/Vercel Deployment"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { 
+        "@type": "Question", 
+        "name": "Do I need to be an expert in JavaScript before joining this React.js course?", 
+        "acceptedAnswer": { 
+          "@type": "Answer", 
+          "text": "Not at all. Our course is structured to start with a complete refresh of fundamental and modern JavaScript (ES6+) concepts before stepping into complex React UI development." 
+        } 
+      },
+      { 
+        "@type": "Question", 
+        "name": "What practical real-world projects will I build during this React training?", 
+        "acceptedAnswer": { 
+          "@type": "Answer", 
+          "text": "You will build complete real-world web apps, including an interactive E-commerce frontend with a shopping cart, a real-time weather application using live APIs, and a multi-page dashboard with global state management." 
+        } 
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Bricolage+Grotesque:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--p:#0052cc;--pl:#3b82f6;--pd:rgba(0,82,204,.08);--bg:#fff;--bgs:#f8fafc;--bgd:#0a0f1e;--td:#0d1117;--tb:#374151;--tm:#64748b;--br:#e2e8f0;--sm:0 4px 20px rgba(0,0,0,.06);--sl:0 20px 60px rgba(0,0,0,.10);--r:16px;--fd:'Clash Display',sans-serif;--fb:'Bricolage Grotesque',sans-serif;--fn:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;--sp:96px}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--fn);color:var(--tb);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    
+    .h2, h1, h3, h4, .tag { font-family:var(--fd); }
+    
+    .c{width:100%;max-width:1140px;margin:0 auto;padding:0 24px}
+    .tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--p);background:var(--pd);padding:5px 12px;border-radius:100px;margin-bottom:16px}
+    .h2{font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--td);line-height:1.2;letter-spacing:-.5px}
+    .lead{font-size:17px;color:var(--tm);line-height:1.7;max-width:620px}
+    .tc{text-align:center}.tc .lead{margin:0 auto}
+    
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    [data-r]{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+    [data-r].v{opacity:1;transform:none}
+
+    /* Breadcrumb Nav */
+    nav.bc{background:var(--bgs);border-bottom:1px solid var(--br);padding:12px 0;font-size:13px;color:var(--tm)}
+    nav.bc a{color:var(--tm);text-decoration:none;transition:color .2s}nav.bc a:hover{color:var(--p)}
+    nav.bc .sep{margin:0 8px;opacity:.4}nav.bc .cur{color:var(--td);font-weight:500}
+
+    /* Hero Section */
+    .hero{background:var(--bgd);padding:120px 0;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.06) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)}
+    .hero::after{content:'';position:absolute;top:-160px;right:-160px;width:600px;height:600px;background:radial-gradient(circle,rgba(0,82,204,.35) 0%,transparent 65%);pointer-events:none}
+    .orb{position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(245,158,11,.12) 0%,transparent 65%);pointer-events:none}
+    
+    .herogrid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:48px;align-items:center;position:relative;z-index:2}
+    .hi{max-width:100%}
+    .hbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);color:#60a5fa;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:6px 14px;border-radius:100px;margin-bottom:24px;animation:fadeUp .7s ease both}
+    .hero h1{font-size:clamp(34px,5vw,56px);font-weight:700;color:#fff;line-height:1.15;letter-spacing:-1px;margin-bottom:20px;animation:fadeUp .7s .1s ease both}
+    .hero h1 em{font-style:normal;background:linear-gradient(135deg,#3b82f6,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hdesc{font-size:18px;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:40px;animation:fadeUp .7s .2s ease both}
+    
+    .pills{display:flex;flex-wrap:wrap;gap:12px;animation:fadeUp .7s .3s ease both}
+    .pill{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.9);font-size:14px;font-weight:600;padding:12px 22px;border-radius:100px;transition:all .25s}
+    .pill:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+    .pill i{color:#3b82f6;font-size:14px}
+    .pill.hl{background:rgba(6,182,212,.12);border-color:rgba(6,182,212,.25);color:#22d3ee}.pill.hl i{color:#22d3ee}
+
+    /* Highlight Summary Box */
+    .hero-summary-box{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:32px;animation:fadeUp .7s .2s ease both}
+    .hero-summary-box h3{color:#fff;font-size:20px;margin-bottom:16px}
+    .hsb-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+    .hsb-list li{font-size:14px;color:rgba(255,255,255,.65);display:flex;align-items:flex-start;gap:12px}
+    .hsb-list li i{color:#3b82f6;margin-top:4px}
+
+    /* About Section Grid Layout */
+    .about{padding:var(--sp) 0}
+    .agrid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .at .h2{margin-bottom:16px}
+    .at p{font-size:16px;line-height:1.75;margin-bottom:16px}
+    .hbox{background:linear-gradient(135deg,#eff6ff,#e0f2fe);border-left:4px solid #06b6d4;border-radius:0 10px 10px 0;padding:18px 20px;font-size:15px;font-weight:600;color:var(--td);margin-top:24px;line-height:1.6}
+    .kp{list-style:none;display:flex;flex-direction:column;gap:16px}
+    .kp li{display:flex;gap:16px;align-items:flex-start;background:var(--bgs);border:1px solid var(--br);border-radius:var(--r);padding:18px 20px;transition:transform .3s,box-shadow .3s,border-color .3s}
+    .kp li:hover{transform:translateX(6px);box-shadow:var(--sm);border-color:var(--pl)}
+    .iw{width:40px;height:40px;flex-shrink:0;background:var(--pd);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--p);font-size:16px}
+    .kp strong{display:block;font-weight:700;color:var(--td);font-size:15px;margin-bottom:3px}
+    .kp span{font-size:14px;color:var(--tm);line-height:1.5}
+
+    /* Syllabus Curriculum Grid Layout */
+    .curr{padding:var(--sp) 0;background:var(--bgs)}
+    .curr .sh{margin-bottom:56px}
+    .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .mc{background:#fff;border:1px solid var(--br);border-radius:var(--r);padding:28px;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s,border-color .3s}
+    .mc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--p),#06b6d4);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+    .mc:hover{transform:translateY(-6px);box-shadow:var(--sl);border-color:transparent}
+    .mc:hover::before{transform:scaleX(1)}
+    .mn{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--p);background:var(--pd);display:inline-block;padding:4px 10px;border-radius:6px;margin-bottom:12px}
+    .mc h4{font-size:18px;font-weight:700;color:var(--td);margin-bottom:14px}
+    .mc ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+    .mc ul li{font-size:14px;color:var(--tb);padding-left:18px;position:relative;line-height:1.5}
+    .mc ul li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--pl)}
+
+    /* Tools Display System */
+    .tools{padding:var(--sp) 0}
+    .tgrid{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+    .tc2{display:inline-flex;align-items:center;gap:8px;background:var(--bgs);border:1px solid var(--br);color:var(--td);font-size:14px;font-weight:600;padding:10px 18px;border-radius:100px;cursor:default;transition:all .25s}
+    .tc2 i{color:var(--p);font-size:13px}
+    .tc2:hover{background:var(--p);border-color:var(--p);color:#fff;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,82,204,.25)}
+    .tc2:hover i{color:#fff}
+
+    /* Target Audience Segment */
+    .aud{padding:var(--sp) 0;background:var(--bgd);position:relative;overflow:hidden}
+    .aud::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.04) 1px,transparent 1px);background-size:40px 40px}
+    .aud .tag{color:#60a5fa;background:rgba(96,165,250,.12)}.aud .h2{color:#fff}.aud .lead{color:rgba(255,255,255,.55)}
+    .audg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+    .ac{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:32px 28px;transition:background .3s,border-color .3s,transform .3s;position:relative;z-index:1}
+    .ac:hover{background:rgba(255,255,255,.07);border-color:rgba(96,165,250,.3);transform:translateY(-4px)}
+    .ac .iw{width:52px;height:52px;background:rgba(0,82,204,.25);border-radius:14px;font-size:20px;color:#60a5fa;margin-bottom:18px}
+    .ac h4{font-size:18px;font-weight:700;color:#fff;margin-bottom:10px}
+    .ac p{font-size:14px;color:rgba(255,255,255,.55);line-height:1.65}
+
+    /* Career and Salary Matrix Layout */
+    .car{padding:var(--sp) 0}
+    .cl{display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:start}
+    .ci{position:sticky;top:32px}.ci .h2{margin-bottom:14px}
+    .cg{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .cc{background:#fff;border:1px solid var(--br);border-left:4px solid var(--br);border-radius:var(--r);padding:24px;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s,border-left-color .25s;isolation:isolate}
+    .cc:hover{transform:translateX(5px);border-left-color:var(--p);box-shadow:var(--sm)}
+    .cc .role {font-size:17px;font-weight:700;color:var(--td);display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+    .cc .role i{color:var(--p);opacity:.7;font-size:14px}
+    .cc .sal-tag{font-size:14px;font-weight:700;color:#10b981;margin-bottom:8px;display:block}
+    .cc .co{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--tm);background:var(--bgs);padding:6px 12px;border-radius:8px}
+    .cc.ft{background:linear-gradient(135deg,#eff6ff,#e0f2fe);border-color:#bfdbfe;border-left-color:#06b6d4}
+    .cc.ft .role{color:var(--p)}.cc.ft .sal-tag{color:#10b981}
+
+    /* Accordion FAQ Component */
+    .faq{padding:var(--sp) 0;background:var(--bgs)}
+    .fl{max-width:760px;margin:48px auto 0;display:flex;flex-direction:column;gap:12px}
+    .fi{background:#fff;border:1px solid var(--br);border-radius:var(--r);overflow:hidden;transition:box-shadow .3s}
+    .fi:hover{box-shadow:var(--sm)}
+    .fq{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 24px;font-size:15px;font-weight:600;color:var(--td);cursor:pointer;user-select:none;transition:color .2s}
+    .fq:hover{color:var(--p)}
+    .fq .ch{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--bgs);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--tm);transition:transform .3s,background .2s,color .2s}
+    
+    .fa{font-family:var(--fn) !important;font-size:15px;color:var(--tb);line-height:1.7;max-height:0;overflow:hidden;padding:0 24px;transition:max-height .3s ease-in-out, padding .3s ease-in-out}
+    .fi.op .fq{color:var(--p)}.fi.op .ch{transform:rotate(180deg);background:var(--pd);color:var(--p)}
+    .fi.op .fa{max-height:500px;padding:0 24px 20px}
+
+    /* Bottom Information Routing Element */
+    .cta{background:linear-gradient(135deg,#0a0f1e 0%,#0d2257 60%,#0a0f1e 100%);padding:80px 0;text-align:center;position:relative;overflow:hidden}
+    .cta::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(0,82,204,.25) 0%,transparent 50%),radial-gradient(circle at 80% 50%,rgba(6,182,212,.15) 0%,transparent 50%)}
+    .cta-in{position:relative;z-index:1}
+    .cta h2{font-size:clamp(28px,4vw,44px);font-weight:700;color:#fff;margin-bottom:14px;letter-spacing:-.5px}
+    .cta p{font-size:17px;color:rgba(255,255,255,.6);margin-bottom:40px}
+    .cbs{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+    .btn{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;padding:14px 28px;border-radius:100px;text-decoration:none;transition:all .25s;border:2px solid transparent}
+    .bp{background:#fff;color:var(--td)}.bp:hover{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+    .bo{background:transparent;border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.88)}.bo:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5);color:#fff}
+
+    @media(max-width:1024px){.herogrid{grid-template-columns:1fr;gap:40px;text-align:center}.pills{justify-content:center}.hero-summary-box{max-width:540px;margin:0 auto;text-align:left}.agrid{grid-template-columns:1fr;gap:40px}.cgrid{grid-template-columns:repeat(2,1fr)}.cl{grid-template-columns:1fr;gap:40px}.ci{position:static}}
+    @media(max-width:768px){:root{--sp:64px}.cgrid,.audg,.cg{grid-template-columns:1fr}.pills{gap:8px}.pill{font-size:13px;padding:8px 16px}}
+    @media(max-width:480px){.hero{padding:72px 0 60px}}
+  </style>
+</head>
+<body>
+
+  <nav class="bc" aria-label="Breadcrumb">
+    <div class="c">
+      <a href="index.html">Home</a><span class="sep">›</span>
+      <a href="index.html#courses">Courses</a><span class="sep">›</span>
+      <span class="cur">React.js Course in Kerala</span>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="orb"></div>
+    <div class="c">
+      <div class="herogrid">
+        <div class="hi">
+          <div class="hbadge"><i class="fas fa-code"></i> Professional Front End Track</div>
+          <h1>React.js <em>Master Course</em></h1>
+          <p class="hdesc">Build dynamic and ultra-fast user interfaces. Master modern components, state handling, hooks, and external API services. Turn basic designs into fully operational single-page web applications.</p>
+          <div class="pills">
+            <div class="pill"><i class="fas fa-clock"></i> Both 4 & 6 Months Internship</div>
+            <div class="pill"><i class="fas fa-laptop-code"></i> Pure Practical Coding</div>
+            <div class="pill"><i class="fas fa-file-code"></i> Live Project Portfolio</div>
+            <div class="pill hl"><i class="fab fa-react"></i> Single Page Architecture</div>
+          </div>
+        </div>
+        
+        <div class="hero-summary-box">
+          <h3>Frontend Engine Matrix</h3>
+          <ul class="hsb-list">
+            <li><i class="fab fa-js-square" style="color:#f7df1e"></i> <span><strong>Modern JavaScript:</strong> ES6 features, arrow functions, array loops, and async logic templates.</span></li>
+            <li><i class="fab fa-react" style="color:#61dafb"></i> <span><strong>React Core Patterns:</strong> Virtual DOM execution, functional styling, props, and custom components.</span></li>
+            <li><i class="fas fa-boxes-stacked" style="color:#764abc"></i> <span><strong>State Engineering:</strong> Manage application data easily using Context API and Redux Toolkit.</span></li>
+            <li><i class="fas fa-cloud-arrow-up" style="color:#10b981"></i> <span><strong>Live API Integration:</strong> Connect frontend structures smoothly to backend data servers using Axios.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="c">
+      <div class="agrid">
+        <div class="at" data-r>
+          <span class="tag">In-Demand Tech</span>
+          <h2 class="h2">Develop Interactive Single Page Applications Like a Pro</h2>
+          <p>Every major web portal is swapping old static designs for high-speed dynamic layouts. Companies and tech parks inside Kerala look specifically for developers who can handle UI layouts independently using React frameworks.</p>
+          <p>Our course guides you step-by-step through the frontend engineering ecosystem. You will start with modern JavaScript, quickly move to building modular React components, manage global data states, and publish your fully working responsive apps online.</p>
+          <div class="hbox">
+            <i class="fas fa-check-circle" style="color:#06b6d4;margin-right:8px"></i><strong>Completely focused on practical coding output.</strong> Designed from the ground up for students looking to land frontend web positions.
+          </div>
+        </div>
+        
+        <ul class="kp" data-r>
+          <li>
+            <div class="iw"><i class="fab fa-js"></i></div>
+            <div><strong>Modern JavaScript (ES6+) Foundations</strong><span>Understand arrow structures, object arrays destructuring, spread operations, and advanced asynchronous data loops.</span></div>
+          </li>
+          <li>
+            <div class="iw"><i class="fas fa-cubes"></i></div>
+            <div><strong>Modular Component Structures</strong><span>Design highly reusable blocks and templates, passing properties safely across various interface segments.</span></div>
+          </li>
+          <li>
+            <div class="iw"><i class="fas fa-anchor"></i></div>
+            <div><strong>React Hooks Architecture</strong><span>Control local component variables using state managers, hook lifecycles, references, and optimized rendering.</span></div>
+          </li>
+          <li>
+            <div class="iw"><i class="fas fa-sliders"></i></div>
+            <div><strong>Global Data State Management</strong><span>Coordinate comprehensive system variables easily across large layouts using Context maps or Redux tool modules.</span></div>
+          </li>
+          <li>
+            <div class="iw"><i class="fas fa-route"></i></div>
+            <div><strong>Dynamic Frontend Routing</strong><span>Implement multi-page app navigations smoothly without reloading browser tabs using React Router systems.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="curr">
+    <div class="c">
+      <div class="sh tc" data-r>
+        <span class="tag">Learning Timeline</span>
+        <h2 class="h2">Course Engineering Modules Breakdown</h2>
+        <p class="lead" style="margin-top:12px">An easy-to-follow, highly practical training structure designed for Kerala graduates aiming for great frontend positions.</p>
+      </div>
+      
+      <div class="cgrid">
+        <div class="mc" data-r>
+          <div class="mn">Module 01</div>
+          <h4>Advanced JavaScript Essentials</h4>
+          <ul>
+            <li>Configuring development terminals and modern node runtimes</li>
+            <li>Working with let/const modifiers and string literals</li>
+            <li>Mapping arrays, filtering lists, and reducing structures</li>
+            <li>Handling code operations using asynchronous promises</li>
+            <li>Fetching live server datasets using async-await templates</li>
+          </ul>
+        </div>
+        <div class="mc" data-r>
+          <div class="mn">Module 02</div>
+          <h4>React Core &amp; JSX Systems</h4>
+          <ul>
+            <li>Understanding standard scripts vs. virtual component trees</li>
+            <li>Writing clean layouts inside dynamic JSX tags</li>
+            <li>Organizing clean modular code layouts and folder architecture</li>
+            <li>Passing configurations and values down via properties</li>
+            <li>Rendering multiple dynamic listings using keys safely</li>
+          </ul>
+        </div>
+        <div class="mc" data-r>
+          <div class="mn">Module 03</div>
+          <h4>Hooks &amp; Interface State Control</h4>
+          <ul>
+            <li>Managing local memory matrices inside functional structures</li>
+            <li>Connecting external components using lifecycle hooks</li>
+            <li>Handling user actions, button triggers, and input fields</li>
+            <li>Designing responsive forms and capturing inputs on change</li>
+            <li>Preventing unwanted calculations with performance hooks</li>
+          </ul>
+        </div>
+        <div class="mc" data-r>
+          <div class="mn">Module 04</div>
+          <h4>Multi-Page App Navigations</h4>
+          <ul>
+            <li>Setting up route boundaries with React Router engines</li>
+            <li>Creating safe path links without structural page reloads</li>
+            <li>Capturing variables directly out of dynamic browser paths</li>
+            <li>Protecting premium routes using conditional tracking files</li>
+            <li>Designing dedicated error pages for unmatched navigation links</li>
+          </ul>
+        </div>
+        <div class="mc" data-r>
+          <div class="mn">Module 05</div>
+          <h4>Global State &amp; Redux Setup</h4>
+          <ul>
+            <li>Solving common data sharing issues across deeply nested views</li>
+            <li>Distributing application-wide contexts using provider patterns</li>
+            <li>Configuring global stores using modern Redux tool slices</li>
+            <li>Dispatching state changes from nested frontend elements</li>
+            <li>Persisting user data arrays throughout browser operations</li>
+          </ul>
+        </div>
+        <div class="mc" data-r>
+          <div class="mn">Module 06</div>
+          <h4>Live Integrations &amp; Cloud Launch</h4>
+          <ul>
+            <li>Connecting local frontends to operational REST backend endpoints</li>
+            <li>Structuring production builds and running code mini-packers</li>
+            <li>Hosting operational frontends live on Netlify and Vercel clouds</li>
+            <li>Configuring environment keys for external network security</li>
+            <li>Polishing clean source files to show to engineering tech leads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools">
+    <div class="c" data-r>
+      <span class="tag">Tech Stack Matrix</span>
+      <h2 class="h2" style="margin-bottom:6px">Technologies and Libraries Included</h2>
+      <p class="lead">Gain everyday practical experience using the exact same tools and technologies used by engineering teams globally.</p>
+      <div class="tgrid">
+        <div class="fab fa-react"> React.js Core Engine</div>
+        <div class="tc2"><i class="fab fa-js-square"></i> Modern JavaScript ES6+</div>
+        <div class="tc2"><i class="fas fa-boxes-stacked"></i> Redux Toolkit Modules</div>
+        <div class="tc2"><i class="fas fa-route"></i> React Router Engine</div>
+        <div class="tc2"><i class="fas fa-network-wired"></i> Axios API Fetchers</div>
+        <div class="tc2"><i class="fab fa-css3-alt"></i> Tailwind UI Framework</div>
+        <div class="tc2"><i class="fab fa-npm"></i> NPM Package Environments</div>
+        <div class="tc2"><i class="fas fa-vial"></i> Developer Testing Utilities</div>
+        <div class="tc2"><i class="fas fa-cloud"></i> Vercel/Netlify Clouds</div>
+        <div class="tc2"><i class="fab fa-git-alt"></i> Git Version Control Systems</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aud">
+    <div class="c">
+      <div class="tc" data-r>
+        <span class="tag">Target Profiles</span>
+        <h2 class="h2">Who Should Choose This Engineering Path?</h2>
+        <p class="lead" style="margin-top:12px">This professional programming track is structured to fit multiple career paths and backgrounds.</p>
+      </div>
+      
+      <div class="audg">
+        <div class="ac" data-r>
+          <div class="iw"><i class="fas fa-laptop-code"></i></div>
+          <h4>Web &amp; UI Designers</h4>
+          <p>Go beyond traditional CSS frameworks. Turn your creative styles into dynamic, responsive interface blocks that tech companies actively recruit.</p>
+        </div>
+        <div class="ac" data-r>
+          <div class="iw"><i class="fas fa-graduation-cap"></i></div>
+          <h4>Beginners &amp; IT Grads</h4>
+          <p>Skip obsolete coding models. Build a solid foundation by jumping straight into modern frontend web development, closing your career readiness gaps.</p>
+        </div>
+        <div class="ac" data-r>
+          <div class="iw"><i class="fas fa-code-compare"></i></div>
+          <h4>Traditional Developers</h4>
+          <p>Upgrade old scripting skills. Move from heavy server-dependent page setups to agile, fast client-side applications designed for low loading speeds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="car">
+    <div class="c">
+      <div class="cl">
+        <div class="ci" data-r>
+          <span class="tag">Industry Growth</span>
+          <h2 class="h2">Career Specializations Open to You</h2>
+          <p class="lead" style="margin-top:12px">Frontend engineering remains highly sought after across all sectors of the modern web economy.</p>
+        </div>
+        
+        <div class="cg" data-r>
+          <div class="cc">
+            <div class="role">React Application Developer <i class="fab fa-react"></i></div>
+            <span class="sal-tag">High Growth Potential</span>
+            <div class="co"><i class="far fa-building"></i> UI Tech Teams &amp; Digital Agencies</div>
+          </div>
+          <div class="cc">
+            <div class="role">Frontend Software Engineer <i class="fas fa-code"></i></div>
+            <span class="sal-tag">Core Enterprise Grade</span>
+            <div class="co"><i class="far fa-building"></i> Product Companies &amp; IT Hubs</div>
+          </div>
+          <div class="cc">
+            <div class="role">UI Interface Architect <i class="fas fa-compass-drafting"></i></div>
+            <span class="sal-tag">Design Specialist Level</span>
+            <div class="co"><i class="far fa-building"></i> Digital Product Studios</div>
+          </div>
+          <div class="cc">
+            <div class="role">Single Page App Engineer <i class="fas fa-bolt"></i></div>
+            <span class="sal-tag">Optimization Expert Profile</span>
+            <div class="co"><i class="far fa-building"></i> Startup Development Teams</div>
+          </div>
+          <div class="cc ft">
+            <div class="role">Remote Frontend Engineer <i class="fas fa-globe"></i></div>
+            <span class="sal-tag">Worldwide Remote Access</span>
+            <div class="co" style="background:rgba(0,82,204,.1);color:var(--p)"><i class="fas fa-wifi"></i> International Project Teams</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="c">
+      <div class="tc" data-r><span class="tag">Help Desk FAQs</span><h2 class="h2">Frequently Asked Questions</h2></div>
+      
+      <div class="fl">
+        <div class="fi">
+          <div class="fq">Do I need to be an expert in JavaScript before joining this React.js course? <span class="ch"><i class="fas fa-chevron-down"></i></span></div>
+          <div class="fa">Not at all. Our course is structured to start with a complete refresh of fundamental and modern JavaScript (ES6+) concepts before stepping into complex React UI development.</div>
+        </div>
+        <div class="fi">
+          <div class="fq">What practical real-world projects will I build during this React training? <span class="ch"><i class="fas fa-chevron-down"></i></span></div>
+          <div class="fa">You will build complete real-world web apps, including an interactive E-commerce frontend with a shopping cart, a real-time weather application using live APIs, and a multi-page dashboard with global state management.</div>
+        </div>
+        <div class="fi">
+          <div class="fq">Will I receive official course completion certificates? <span class="ch"><i class="fas fa-chevron-down"></i></span></div>
+          <div class="fa">Yes, you will receive our professional React.js Web Developer certificate confirming your frontend training track, which you can easily add to your resume and LinkedIn profiles.</div>
+        </div>
+        <div class="fi">
+          <div class="fq">Are the training sessions available on flexible schedules? <span class="ch"><i class="fas fa-chevron-down"></i></span></div>
+          <div class="fa">Yes, we provide flexible training hours during morning and evening periods, making it easy for college students and working professionals to balance with their routine tasks.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="enroll">
+    <div class="c"><div class="cta-in">
+      <h2>Talk to Our Education Consultants</h2>
+      <p>Have questions about courses, schedules, fees, or upcoming batches? Connect with our team for expert guidance and personalized support.</p>
+      <div class="cbs">
+        <a href="tel:+917560929242" class="btn bp"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/919142154977" target="_blank" rel="noopener noreferrer" class="btn bo"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
+      </div>
+    </div></div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.fq').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const wasOpen = item.classList.contains('op');
+        
+        document.querySelectorAll('.fi.op').forEach(el => el.classList.remove('op'));
+        if (!wasOpen) item.classList.add('op');
+      });
+    });
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const parent = entry.target.parentElement;
+          const siblings = Array.from(parent.querySelectorAll('[data-r]'));
+          const index = siblings.indexOf(entry.target);
+          const delay = index >= 0 ? index * 80 : 0;
+          
+          setTimeout(() => entry.target.classList.add('v'), delay);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('[data-r]').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
